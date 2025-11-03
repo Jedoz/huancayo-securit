@@ -305,11 +305,7 @@ elif page == "🚨 BOTÓN DE PÁNICO":
         nombre_usuario = st.text_input("👤 Tu nombre completo", "Edwar Rojas")
         contacto_emergencia = st.text_input("📧 Email de emergencia", "edwarrojasccasa@gmail.com")
         
-        st.info("""
-        **📧 Para probar AHORA:**
-        - Usa tu email personal o de un familiar
-        - La alerta llegará inmediatamente
-        """)
+        st.info("📧 Para probar AHORA: Usa tu email personal o de un familiar")
     
     # Información médica
     with st.expander("🏥 INFORMACIÓN MÉDICA (Opcional)"):
@@ -467,7 +463,6 @@ elif page == "🏪 Zonas Seguras":
             
             if st.button(f"🚶‍♂️ Cómo llegar a {nombre}", key=f"safe_{i}"):
                 st.info(f"🗺️ Calculando ruta segura hacia {nombre}...")
-                # Aquí iría la lógica de navegación
             st.markdown('</div>', unsafe_allow_html=True)
 
 # =============================================================================
@@ -501,16 +496,10 @@ elif page == "👤 Perfil":
 # =============================================================================
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📊 ANÁLISIS DE PATRONES")
-st.sidebar.info("""
-**🤖 IA detecta patrones:**
-- Zona centro: 70% más peligrosa después de 8 PM
-- Viernes + pago = 85% más robos
-- Correlaciones identificadas
-""")
+st.sidebar.info("🤖 IA detecta patrones: Zona centro 70% más peligrosa después de 8 PM")
 
 st.sidebar.markdown("### 🌐 COMPARTIR APP")
-st.sidebar.success("""
-**Para acceso externo:**
-```bash
-streamlit run app.py
-ngrok http 8501
+st.sidebar.success("Para acceso externo: streamlit run app.py luego ngrok http 8501")
+
+st.sidebar.markdown("### 🔐 CONFIGURACIÓN GMAIL")
+st.sidebar.warning("Recuerda configurar la contraseña de aplicación en línea 13")
