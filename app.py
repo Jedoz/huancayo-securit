@@ -492,7 +492,7 @@ elif page == "👤 Perfil":
             st.success("✅ Perfil actualizado correctamente")
 
 # =============================================================================
-# INFORMACIÓN EN SIDEBAR
+# INFORMACIÓN EN SIDEBAR - CORREGIDO
 # =============================================================================
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📊 ANÁLISIS DE PATRONES")
